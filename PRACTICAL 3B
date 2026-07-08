@@ -1,0 +1,33 @@
+import math
+
+arr=[]
+
+n=int(input("Enter the number of elements: "))
+
+for i in range(n):
+    num=int(input("\nEnter the Elements:"))
+    arr.append(num)
+
+print("\nArray:",arr)
+
+print("\nSquare root: ")
+for i in arr:
+    print(math.sqrt(i),end=" ")
+
+
+print("\nSquare: ")
+for i in arr:
+    print(math.pow(i,2),end=" ")
+
+
+print("\nCube: ")
+for i in arr:
+    print(math.pow(i,3),end=" ")
+
+
+print("\nFactorial: ")
+for i in arr:
+    if i >=0 :
+     print(math.factorial(i),end=" ")
+else:
+    print("Invalid number!")
