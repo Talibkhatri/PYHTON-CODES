@@ -1,0 +1,26 @@
+from array import *
+arr =([10,20,30,40,50])
+print(f"Original Array: {arr} ")
+
+#Basic Operations
+arr.append(60)
+print("Array after Append: ",arr)
+
+arr.insert(6,90)
+print("Array after Insert: ",arr)
+
+arr.remove(30)
+print("Array after Remove: ",arr)
+
+#Indexing
+print("First Element: ",(arr[0]))
+print("Second Element: ",(arr[1]))
+print("Third Element: ",(arr[2]))
+print("Fourth Element: ",(arr[3]))
+print("Fifth Element: ",(arr[4]))
+
+#Slicing
+print("Elements from index 1 to 3:", (arr[1:4]))
+print("First three elements:", (arr[:3]))
+print("Elements from index 2 to end:", (arr[2:]))
+print("Complete Array:", arr)
