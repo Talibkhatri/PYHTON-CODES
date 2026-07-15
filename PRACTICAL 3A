@@ -1,8 +1,13 @@
 from array import *
-arr =([10,20,30,40,50])
+arr =array('i', [10, 20, 30, 40, 50])
 print(f"Original Array: {arr} ")
 
 #Basic Operations
+print("Basic Operations=>")
+print("-"*50)
+arr[1]=50
+print("Array after Update: ",arr)
+
 arr.append(60)
 print("Array after Append: ",arr)
 
@@ -12,15 +17,36 @@ print("Array after Insert: ",arr)
 arr.remove(30)
 print("Array after Remove: ",arr)
 
+last=arr.pop()
+print("Popped",last)
+print("Array after popped the element in the index 1:",arr)
+
+last=arr.pop(1)
+print("Popped",last)
+print("Array after being popped:",arr)
+
+for i in range(len(arr)):
+    print(i)
+
+print("Length of the array :",len(arr))
+
+list=arr.tolist()
+print("List:",list)
+
 #Indexing
+print("Indexing=>")
+print("-"*50)
 print("First Element: ",(arr[0]))
 print("Second Element: ",(arr[1]))
 print("Third Element: ",(arr[2]))
 print("Fourth Element: ",(arr[3]))
-print("Fifth Element: ",(arr[4]))
 
 #Slicing
+print("Slicing=>")
+print("-"*50)
 print("Elements from index 1 to 3:", (arr[1:4]))
 print("First three elements:", (arr[:3]))
 print("Elements from index 2 to end:", (arr[2:]))
+print("Elements from 2 to 3:", (arr[-3:-1]))
 print("Complete Array:", arr)
+
