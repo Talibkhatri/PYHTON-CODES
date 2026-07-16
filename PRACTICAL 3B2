@@ -1,0 +1,26 @@
+import numpy as np
+# Sample array
+arr = np.array([10, 20, 30, 40, 50])
+print("Original Array:", arr)
+# Sum of all elements
+print("Sum:", np.sum(arr))
+
+# Mean (Average)
+print("Mean:", np.mean(arr))
+
+# Maximum and Minimum
+print("Maximum:", np.max(arr))
+print("Minimum:", np.min(arr))
+
+
+# Square of each element
+print("Square of each element:", np.square(arr))
+
+# Square root of each element
+print("Square root of each element:", np.sqrt(arr))
+
+# Adding a constant (e.g., add 5 to every element)
+print("Array + 5:", arr + 5)
+
+# Multiply every element by 2
+print("Array * 2:", arr * 2)
