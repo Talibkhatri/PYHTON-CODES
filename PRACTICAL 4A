@@ -1,0 +1,34 @@
+import numpy as np
+
+arr = np.array([10, 20, 30, 40, 50, 60, 70, 80, 90])
+
+print("Original Array:",arr)
+
+print("Indexing:")
+print("First Element",arr[0])
+print("FiFth Element",arr[4])
+print("Thirdlast Element: ",arr[-3])
+
+print("Slicing:")
+print("Elements from 3 to end:",arr[2:])
+print("First Three Elements:",arr[:3])
+print("Elements till 6:",arr[:6])
+print("Elements from 1 to 8:",arr[0:8])
+print("Elements from 1 to end:",arr[:8])
+print("Every second elements:",arr[::2])
+
+
+print("Advanced indexing:")
+indices=[0,4,4,6,7,6,7]
+print("print elements (0,4,4,6,7,6,7)",arr[indices])
+
+print("Boolean Indexing:")
+print("Elements Greater and equals to 40:",arr[arr >= 40])
+
+arr2 = np.arange(12).reshape(3, 4)
+print(arr2)
+result = arr2[[0, 2], 1:3]  
+print(result)
+#Indexing with Repeats
+result = arr[[3, 1, 1, 2]]
+print(result)
